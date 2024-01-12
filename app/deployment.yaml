@@ -1,8 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: appserver-Deployment
+  name: appserver-deployment
 spec:
+  replicas: 1
   selector:
     matchLabels:
       app: appserver
@@ -16,4 +17,4 @@ spec:
         image: appserver:v1
         imagePullPolicy: Never
         ports:
-        - containerPort: 3000
+        - containerPort: 80
