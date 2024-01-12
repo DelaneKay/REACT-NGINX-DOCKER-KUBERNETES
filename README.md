@@ -9,7 +9,7 @@ This project demonstrates how to Dockerize a React app with NGINX, and deploy it
 ## Step 1: Start Minikube
 Start `Minikube` with the following command:
 ```js
-minikube start
+minikube start --driver=docker
 ```
 
 ## Step 2: Enable Docker Environment for Minikube
